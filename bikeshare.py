@@ -182,18 +182,18 @@ def main():
         trip_st=trip_duration_stats(df)
         user_st = user_stats(df)
 
-        print("Time Statistics for {} in month {} and day {}". format(city, month, day))
+        print("Time Statistics in month {} and day {}". format(city, month, day))
         print('-'*80)
-        print("Most Popular month in {}: {}". format(city, months[time_st[0]]))
-        print("Most Popular day of week in {}: {}". format(city, time_st[1]))
-        print("Most Popular Starting hour in {}: {}". format(city, time_st[2]))
+        print("Most Popular month: {}". format(city, months[time_st[0]]))
+        print("Most Popular day of week: {}". format(city, time_st[1]))
+        print("Most Popular Starting hour: {}". format(city, time_st[2]))
 
 
-        print("Station Statistics for {} in month {} and day {}". format(city, month, day))
+        print("Station Statistics in month {} and day {}". format(city, month, day))
         print('-'*80)
-        print("Most Popular Starting Station in {}: {}". format(city, station_st[0]))
-        print("Most Popular Ending Station in {}: {}". format(city, station_st[1]))
-        print("Most Popular Combinatipon of Start and Endin {}: {}". format(city, station_st[2]))
+        print("Most Popular Starting Station: {}". format(city, station_st[0]))
+        print("Most Popular Ending Station: {}". format(city, station_st[1]))
+        print("Most Popular Combinatipon of Start and End: {}". format(city, station_st[2]))
 
 
         print("Trip Duration Statistics for {} in month {} and day {}". format(city, month, day))
